@@ -15,7 +15,7 @@
     <main>
         <section id="mleft">
             <nav>
-                <form action="">
+                <span id="error"></span>
                 <table>
                     <caption><h3>Wartości wejściowe</h3></caption>
                     <tr>
@@ -39,7 +39,7 @@
                             <label for="alpa">&alpha; = </label>
                         </td>
                         <td>
-                            <input type="number" name="alpa" id="alpa" required>
+                            <input type="number" name="alpa" id="alpa" required placeholder="0-89">
                         </td>
                     </tr>
                     <tr>
@@ -54,18 +54,19 @@
                         <td colspan="2"><input type="button" value="Oblicz" onclick="oblicz()"></td>
                     </tr>
                 </table>
-                </form>
             </nav>
             <img src="obrazy/obrazek.png" alt="obrazek" width="90%">
         </section>
         <section id="mright">
                 <section id="gora">
+                    <br>
                     V<sub>0</sub> - prędkość początkowa bloczka.<br>
                     f - współczynik tarcia rampy.<br>
                     &alpha; - kąt nachylenia rampy. Uwaga!! kąt nachylenia rampy musi się znajdować w przedziale 0-90 Stopni.<br>
                     eps - mała wartość do której program ma liczyć, w przypadku podania 0 program będzie liczyć aż do momentu przepełnienia miejsca zmiennej.
                 </section>
                 <section id="dol">
+                    <br><br>
                     <nav>
                         Ilość razy jaką klocek odbije się od sprężyny: <span id="ile"></span>
                     </nav>
@@ -76,7 +77,7 @@
     </main>
     <footer>
         <section>
-            Strona zaprojektowana przez: Mikołaj Bulzacki 254727 &copy
+            Strona zaprojektowana przez: Mikołaj Bulzacki 254727
         </section>
     </footer>
 </body>

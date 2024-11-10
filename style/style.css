@@ -27,7 +27,7 @@ header{
 }
 main{
     width: 100%;
-    min-height: calc(100vh - var(--headerheight) - var(--footerheight) - 2 * var(--mainmargin));
+    min-height: calc(100vh - var(--headerheight) - var(--footerheight) - 2 * var(--mainmargin) - 10px);
     display: flex;
 }
 #mleft{
@@ -61,6 +61,7 @@ table{
 input{
     font-size: var(--textsize);
     margin: 10px;
+    width: 50%;
     background-color: var(--maincolor);   
     border-color: var(--secondcolor);
     border-radius: 8px;
@@ -89,4 +90,7 @@ input[type=number] {
     width: 100%;
     max-width: 1000px;
     margin: auto;
+}
+#error{
+    color: red;
 }

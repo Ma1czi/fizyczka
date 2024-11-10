@@ -2,8 +2,8 @@
     --leftmain: 30%;
 
     --maincolor: black;
-    --secondcolor: rgb(174, 174, 174);
-    --thirdcolor: rgb(74, 74, 74);
+    --secondcolor: #464c4e;
+    --thirdcolor: #383c3f;
     --textcolor: white;
 
     --mainmargin: 20px;
@@ -45,7 +45,7 @@ main{
     padding: 50px 0;
     background-color: var(--thirdcolor);
     width: 60%;
-    border: 5px var(--maincolor) solid;
+    border: 5px #8c8273 solid;
     border-radius: 20px;
 }
 footer{

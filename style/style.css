@@ -1,0 +1,85 @@
+*{
+    --leftmain: 30%;
+
+    --maincolor: black;
+    --secondcolor: rgb(174, 174, 174);
+    --thirdcolor: rgb(74, 74, 74);
+    --textcolor: white;
+
+    --mainmargin: 20px;
+    --headerheight: 100px;
+    --footerheight: 100px;
+    --minheight: 700px;
+    --textsize: 24px;
+
+
+    text-align: center;
+    color: var(--textcolor);
+}
+header, body{
+    background-color: var(--maincolor);
+    margin: 0;
+    overflow-y: hidden;
+}
+header{
+    width: 100%;
+    height: var(--headerheight);
+    margin-top: var(--mainmargin);
+}
+main{
+    width: 100%;
+    height: calc(100vh - var(--headerheight) - var(--footerheight) - 2 * var(--mainmargin));
+    min-height: var(--minheight);
+    display: flex;
+}
+#mleft{
+    font-size: var(--textsize);
+    width: var(--leftmain);
+    height: 100%;
+    background-color: var(--secondcolor);
+}
+#mright{
+    width: calc(100% - var(--leftmain));
+    height: 100%;
+    background-color: var(--thirdcolor);
+}
+#mleft nav{
+    margin: auto;
+    margin-top: 100px;
+    padding: 50px 0;
+    background-color: var(--thirdcolor);
+    width: 60%;
+    border: 5px var(--maincolor) solid;
+    border-radius: 20px;
+}
+footer{
+    width: 100%;
+    height: var(--footerheight);
+    margin-top: var(--mainmargin);
+}
+table{
+    width: 100%;
+    height: 100%;
+}
+
+input{
+    font-size: var(--textsize);
+    margin: 10px;
+    background-color: var(--maincolor);   
+    border-color: var(--secondcolor);
+    border-radius: 8px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+*:focus {
+    outline: none;
+}

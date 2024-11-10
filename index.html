@@ -4,8 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siła tarcia</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/obrazek.css">
 </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> 
 <body>
-    <h1>Hello World</h1>
+    <header>
+        <h1>Pozwól stronie policzyć to za ciebie!</h1>
+    </header>
+    <main>
+        <section id="mleft">
+            <nav>
+                <form action="">
+                <table>
+                    <caption><h3>Wartości wejściowe</h3></caption>
+                    <tr>
+                        <td>
+                            <label for="V">V<sub>0</sub> [m/s] = </label>
+                        </td>
+                        <td>
+                            <input type="number" name="V" id="V" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="f"> f = </label>
+                        </td>
+                        <td>
+                            <input type="number" name="f" id="f" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="alpa">&alpha; = </label>
+                        </td>
+                        <td>
+                            <input type="number" name="alpa" id="alpa" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="eps">eps = </label>
+                        </td>
+                        <td>
+                            <input type="number" name="eps" id="eps" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="button" value="Oblicz" onclick="oblicz()"></td>
+                    </tr>
+                </table>
+                </form>
+            </nav>
+            <img src="obrazy/obrazek.png" alt="obrazek" width="90%">
+        </section>
+        <section id="mright">
+                <section id="gora">
+                    V<sub>0</sub> - prędkość początkowa bloczka.<br>
+                    f - współczynik tarcia rampy.<br>
+                    &alpha; - kąt nachylenia rampy. Uwaga!! kąt nachylenia rampy musi się znajdować w przedziale 0-90 Stopni.<br>
+                    eps - mała wartość do której program ma liczyć, w przypadku podania 0 program będzie liczyć aż do momentu przepełnienia miejsca zmiennej.
+                </section>
+                <section id="dol">
+                    <nav>
+                        Ilość razy jaką klocek odbije się od sprężyny: <span id="ile"></span>
+                    </nav>
+                    <canvas id="myChart" style="width:100%;max-width:1000px"></canvas> 
+                </section>
+        </section>
+    </main>
+    <footer>
+        <section>
+            Strona zaprojektowana przez: Mikołaj Bulzacki 254727 &copy
+        </section>
+    </footer>
 </body>
+<script src="skrypt/skrypt.js"></script>
+<script src="skrypt/graph.js"></script>
 </html>

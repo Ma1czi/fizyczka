@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="/style/obrazek.css">
 </head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> 
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <body>
     <header>
         <h1>Pozwól stronie policzyć to za ciebie!</h1>
@@ -69,7 +69,8 @@
                     <nav>
                         Ilość razy jaką klocek odbije się od sprężyny: <span id="ile"></span>
                     </nav>
-                    <canvas id="myChart" style="width:100%;max-width:1000px"></canvas> 
+                    <div id="myPlot"></div>
+                    <div id="vint"></div>
                 </section>
         </section>
     </main>

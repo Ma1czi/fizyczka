@@ -1,0 +1,32 @@
+// let y = [];
+    // let xvt = [];
+    // let change = 0;
+    // let vo = vt[0];
+    // let j = 1;
+    // for(let i = 0; i<=lastt; i+=0.1){
+    //     y.push(i);
+    //     if(i > t[j]){
+    //         if(change == 0){
+    //             change = 1;
+    //         }else{
+    //             change = 0;
+    //         }
+    //         j++;
+    //     }   
+    //     if(change == 0){
+    //         xvt.push(vo[j-1] - sinpcos*i);
+    //     }else{
+    //         xvt.push(vo[j-1] - sinmcos*i);
+    //     }
+    // }
+
+    // const datav = [
+    //     {x:y, y:xvt, mode:"lines"}
+    // ];
+    // const layoutv = {
+    //     xaxis: {title: "Czas [s]"},
+    //     yaxis: {title: "Prędkość [m/s]"},
+    //     title: "Wykres Prędkości od czasu"
+    // };
+
+    // Plotly.newPlot("vint", datav, layoutv);

@@ -19,7 +19,6 @@
 header, body{
     background-color: var(--maincolor);
     margin: 0;
-    overflow-y: hidden;
 }
 header{
     width: 100%;
@@ -28,19 +27,16 @@ header{
 }
 main{
     width: 100%;
-    height: calc(100vh - var(--headerheight) - var(--footerheight) - 2 * var(--mainmargin));
-    min-height: var(--minheight);
+    min-height: calc(100vh - var(--headerheight) - var(--footerheight) - 2 * var(--mainmargin));
     display: flex;
 }
 #mleft{
     font-size: var(--textsize);
     width: var(--leftmain);
-    height: 100%;
     background-color: var(--secondcolor);
 }
 #mright{
     width: calc(100% - var(--leftmain));
-    height: 100%;
     background-color: var(--thirdcolor);
 }
 #mleft nav{
@@ -82,4 +78,15 @@ input[type=number] {
 }
 *:focus {
     outline: none;
+}
+#myPlot{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top:50px;
+}
+#vint{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
 }

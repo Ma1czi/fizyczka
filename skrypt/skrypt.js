@@ -7,7 +7,7 @@ function oblicz(){
     let error = document.getElementById("error");
     
 
-    if(a>=0 && a<=89 && !isNaN(a) && !isNaN(v) && !isNaN(f) && !isNaN(eps)){
+    if(a>=0 && a<=89 && !isNaN(a) && !isNaN(v) && !isNaN(f) && !isNaN(eps) && f>0 && v>0 && eps>=0){
         error.innerHTML = "";
         a= a/ 180 * Math.PI;
         let suma = 0;

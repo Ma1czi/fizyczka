@@ -58,8 +58,7 @@ function oblicz(){
         const layout = {
             xaxis: {title: "Powtórzenia"},
             yaxis: {title: "Wysokość[m] lub prędkość[m/s]"},
-            title: "Wykresy prędkości początkowej i maxymalnej wysokości od powtórzeń",
-            paper_bgcolor: "rgb(56, 60, 63)"
+            title: "Wykresy prędkości początkowej i maxymalnej wysokości od powtórzeń"
         };
         
         // Display using Plotly
@@ -100,8 +99,7 @@ function oblicz(){
         const layoutv = {
             xaxis: {title: "Czas [s]"},
             yaxis: {title: "Prędkość [m/s] / Droga [m]"},
-            title: "Wykres Prędkości od czasu i Drogi od czasu",
-            paper_bgcolor: "rgb(56, 60, 63)"
+            title: "Wykres Prędkości od czasu i Drogi od czasu"
         };
 
         Plotly.newPlot("vint", datav, layoutv);
